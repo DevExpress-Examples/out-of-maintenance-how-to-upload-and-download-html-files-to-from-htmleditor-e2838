@@ -9,7 +9,7 @@
 <!-- default file list end -->
 # How to upload and download HTML files to/from HtmlEditor
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e2838)**
+**[[Run Online]](https://codecentral.devexpress.com/e2838/)**
 <!-- run online end -->
 
 
