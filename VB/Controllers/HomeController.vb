@@ -6,7 +6,7 @@ Imports System.Web
 Imports System.Web.Mvc
 Imports Models
 Imports DevExpress.Web.Mvc
-Imports DevExpress.Web.ASPxUploadControl
+Imports DevExpress.Web
 
 Namespace Controllers
 	<HandleError> _
@@ -33,7 +33,7 @@ Namespace Controllers
 		 End Function
 
 		Public Function FileUploaded() As ActionResult
-			UploadControlExtension.GetUploadedFiles("uc", New ValidationSettings() With {.AllowedFileExtensions = New String() { ".html", ".htm", ".txt" }}, AddressOf FileUploadComplete)
+			UploadControlExtension.GetUploadedFiles("uc", New UploadControlValidationSettings() With {.AllowedFileExtensions = New String() { ".html", ".htm", ".txt" }}, AddressOf FileUploadComplete)
 			Return Nothing
 		End Function
 

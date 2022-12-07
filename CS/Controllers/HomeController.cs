@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Models;
 using DevExpress.Web.Mvc;
-using DevExpress.Web.ASPxUploadControl;
+using DevExpress.Web;
 
 namespace Controllers {
     [HandleError]
@@ -31,7 +31,7 @@ namespace Controllers {
         }
 
         public ActionResult FileUploaded() {
-            UploadControlExtension.GetUploadedFiles("uc", new ValidationSettings() {
+            UploadControlExtension.GetUploadedFiles("uc", new UploadControlValidationSettings() {
                 AllowedFileExtensions = new String[] { ".html", ".htm", ".txt" }
             }, FileUploadComplete);
             return null;
